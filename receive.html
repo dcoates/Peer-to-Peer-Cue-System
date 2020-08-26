@@ -64,10 +64,10 @@
                  function initialize() {
                     // Create own peer object with connection to shared PeerJS server
                     peer = new Peer(null, {
-                        host: '185.146.28.139',
+                        host: 'server.coateslab.org',
                         port: '9000',
                         path: '/myapp',
-                        debug: 2,
+                        debug: 3,
                     });
 
                     peer.on('open', function (id) {
